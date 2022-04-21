@@ -2,3 +2,25 @@
   display: none;
   padding: 20px;
 }
+
+.contact h2 {
+  font-size: 2.4rem;
+}
+
+.contact form input[type='email'],
+.contact form textarea,
+.contact form button {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.contact form button {
+  background-color: var(--t-color);
+  color: var(--p-color);
+  cursor: pointer;
+}
