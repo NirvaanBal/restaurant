@@ -1,3 +1,9 @@
+.home {
+  background-color: var(--dark-color);
+  padding: 40px;
+  color: #fff;
+}
+
 .home h1 {
   font-size: 3rem;
 }
