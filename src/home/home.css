@@ -1,7 +1,5 @@
 .home {
-  background-color: var(--dark-color);
-  padding: 40px;
-  color: #fff;
+  padding: 20px;
 }
 
 .home h1 {

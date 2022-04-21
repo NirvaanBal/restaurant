@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
 
 :root {
-  --dark-color: rgba(0, 0, 0, 0.4);
+  --bg-color: #125b50;
+  --p-color: #faf5e4;
+  --s-color: #f8b400;
+  --t-color: #ff6363;
 }
 
 * {
@@ -19,15 +22,12 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 20px 0;
-
-  background-image: url('./assets/background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: var(--bg-color);
+  color: var(--p-color);
 }
 
 #content {
-  border: dotted 5px #fff;
+  border: dotted 10px var(--s-color);
 
   width: 90%;
   max-width: 960px;
