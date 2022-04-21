@@ -2,3 +2,29 @@
   /* display: none; */
   padding: 20px;
 }
+
+.menu h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.menu ul h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.menu ul img {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu li.flip {
+  flex-direction: row-reverse;
+}
