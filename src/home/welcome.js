@@ -3,6 +3,7 @@ import './home.css';
 const home = () => {
   const rootDiv = document.createElement('div');
   rootDiv.classList.add('home');
+  rootDiv.setAttribute('id', 'home');
 
   const heading = document.createElement('h1');
   heading.textContent = 'The Lemon Club';

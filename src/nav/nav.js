@@ -11,6 +11,9 @@ const nav = () => {
   const navList = document.createElement('ul');
   ['home', 'menu', 'contact'].forEach((item) => {
     const navItem = document.createElement('li');
+    navItem.addEventListener('click', (e) => {
+      return e.target.value;
+    });
     navItem.textContent = item;
     navList.appendChild(navItem);
   });
