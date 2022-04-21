@@ -6,10 +6,15 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   devtool: 'inline-source-map',
   module: {
     rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
       {
         test: /\.(jpg|jpeg)$/i,
         type: 'asset/resource',
