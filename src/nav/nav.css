@@ -1,4 +1,4 @@
-.menu {
+.nav {
   background: var(--dark-color);
   margin-bottom: 20px;
   padding: 0 10px;
@@ -8,16 +8,16 @@
   justify-content: space-between;
 }
 
-.menu h3 {
+.nav h3 {
   color: #fff;
 }
 
-.menu ul {
+.nav ul {
   display: flex;
   justify-content: end;
 }
 
-.menu li {
+.nav li {
   margin: 10px 0 10px 10px;
   padding: 10px;
   background-color: #fff;
@@ -25,7 +25,7 @@
   font-weight: bold;
 }
 
-.menu li:hover {
+.nav li:hover {
   background-color: var(--dark-color);
   color: #fff;
   cursor: pointer;
