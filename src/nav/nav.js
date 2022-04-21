@@ -11,8 +11,20 @@ const nav = () => {
   const navList = document.createElement('ul');
   ['home', 'menu', 'contact'].forEach((item) => {
     const navItem = document.createElement('li');
-    navItem.addEventListener('click', (e) => {
-      return e.target.value;
+    navItem.addEventListener('click', () => {
+      if (item === 'home') {
+        document.querySelector('#home').style.display = 'block';
+        document.querySelector('#menu').style.display = 'none';
+        document.querySelector('#contact').style.display = 'none';
+      } else if (item === 'menu') {
+        document.querySelector('#menu').style.display = 'block';
+        document.querySelector('#home').style.display = 'none';
+        document.querySelector('#contact').style.display = 'none';
+      } else if (item === 'contact') {
+        document.querySelector('#contact').style.display = 'block';
+        document.querySelector('#home').style.display = 'none';
+        document.querySelector('#menu').style.display = 'none';
+      }
     });
     navItem.textContent = item;
     navList.appendChild(navItem);
