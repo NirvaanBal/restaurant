@@ -1,22 +1,11 @@
-import Image from './restaurant.jpg';
+import home from './home/welcome';
+import './index.css';
 
-const root = () => {
-  const rootDiv = document.createElement('div');
+const main = () => {
+  const root = document.getElementById('content');
+  root.appendChild(home());
 
-  const heading = document.createElement('h1');
-  heading.textContent = 'The Restaurant';
-  rootDiv.appendChild(heading);
-
-  const restaurantImage = document.createElement('img');
-  restaurantImage.src = Image;
-  rootDiv.appendChild(restaurantImage);
-
-  const about = document.createElement('p');
-  about.textContent =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores quos provident architecto esse consequuntur natus ut numquam in porro unde quisquam, inventore deleniti aut labore! Fuga libero molestias molestiae.';
-  rootDiv.appendChild(about);
-
-  return rootDiv;
+  return root;
 };
 
-document.getElementById('content').appendChild(root());
+main();
