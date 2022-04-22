@@ -8,23 +8,22 @@
   margin-bottom: 20px;
 }
 
+.menu ul {
+  display: flex;
+  overflow: auto;
+  flex: 0 0 0;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
 .menu ul h4 {
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 .menu ul img {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-}
-
-.menu li {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.menu li.flip {
-  flex-direction: row-reverse;
+  width: 190px;
+  height: 190px;
+  border-radius: 190px;
+  margin-bottom: 15px;
 }

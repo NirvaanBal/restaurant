@@ -23,7 +23,7 @@ const menu = () => {
     },
     {
       drink: drink2,
-      title: 'Pomegranate Reign',
+      title: 'Blueberry Shake',
       about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     },
     {
@@ -38,13 +38,18 @@ const menu = () => {
       about:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laboriosam!',
     },
+    {
+      drink: drink1,
+      title: 'The Green Slush',
+      about:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laboriosam!',
+    },
   ];
 
   const drinks = document.createElement('ul');
   let counter = 1;
   for (let drink of drinksArray) {
     const drinkItem = document.createElement('li');
-    if (counter % 2 === 0) drinkItem.classList.add('flip');
     const drinkImg = new Image();
     drinkImg.src = drink.drink;
     drinkItem.appendChild(drinkImg);
