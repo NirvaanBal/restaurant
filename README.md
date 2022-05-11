@@ -1,6 +1,6 @@
 # Restaurant
 
-An SPA built in vanilla JS powered by webpack.
+An SPA built in vanilla JS powered by webpack. [Live here](https://nirvaanbal.github.io/restaurant/).
 
 ## Features
 
